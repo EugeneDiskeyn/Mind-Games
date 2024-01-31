@@ -1,0 +1,22 @@
+{
+  "name": "mind-games",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "mind-games": "bin/mind-games.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugeneDiskeyn/Mind-Games.git"
+  },
+  "author": "EugeneDiskeyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EugeneDiskeyn/Mind-Games/issues"
+  },
+  "homepage": "https://github.com/EugeneDiskeyn/Mind-Games#readme"
+}
