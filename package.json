@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/EugeneDiskeyn/Mind-Games/issues"
   },
-  "homepage": "https://github.com/EugeneDiskeyn/Mind-Games#readme"
+  "homepage": "https://github.com/EugeneDiskeyn/Mind-Games#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
+  }
 }
