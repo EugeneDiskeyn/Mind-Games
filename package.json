@@ -1,6 +1,7 @@
 {
   "name": "mind-games",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -23,5 +24,8 @@
     "eslint": "^8.56.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }

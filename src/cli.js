@@ -1,4 +1,5 @@
-exports.getName = () => {
-    const readlineSync = require("../lib/readline-sync");
+import readlineSync from "readline-sync"
+
+export const getName = () => {
     return readlineSync.question("Type your name here: ");
 }

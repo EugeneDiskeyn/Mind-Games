@@ -1,5 +1,6 @@
-exports.evenNumGame = () => {
-    const readlineSync = require("../lib/readline-sync");
+import readlineSync from "readline-sync"
+
+export const evenNumGame = () => {
 
     let isAnswerRight = true;
     let rightAnswerCounter = 0;
