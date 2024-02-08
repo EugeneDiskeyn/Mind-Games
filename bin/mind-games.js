@@ -1,5 +1,6 @@
 import { getName } from "../src/cli.js";
 import { evenNumGame } from "../src/evenNumGame.js";
+import { calculatorGame } from "../src/calculatorGame.js";
 
 let isGameContinue = true;
 
@@ -11,6 +12,8 @@ console.log("Hello,", name);
 
 while (isGameContinue) {
     isGameContinue = evenNumGame();
+    console.log("");
+    isGameContinue = calculatorGame();
     break;
 }
 
