@@ -1,6 +1,7 @@
+import readlineSync from "readline-sync"
+
 import { getName } from "../src/cli.js";
-import { evenNumGame } from "../src/evenNumGame.js";
-import { calculatorGame } from "../src/calculatorGame.js";
+import { index } from "../src/index.js"
 
 let isGameContinue = true;
 
@@ -11,12 +12,18 @@ const name = getName();
 console.log("Hello,", name);
 
 while (isGameContinue) {
-    isGameContinue = evenNumGame();
     console.log("");
-    isGameContinue = calculatorGame();
-    break;
-}
+    console.log("1. Even or odd");
+    console.log("2. Calculator");
+    console.log("0. exit");
+    console.log("");
+    
+    const gameNumber = readlineSync.question("Choose the game you would like to play(type the number of the game) ");
+    console.log("");
 
-if (isGameContinue !== true) {
-    console.log("Let's try again, " + name + " !");
+    if (gameNumber !== "0") { 
+        index(gameNumber);
+    } else {
+        isGameContinue = false;
+    }
 }
