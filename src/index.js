@@ -2,6 +2,7 @@ import { evenNumGame } from "./games/evenNumGame.js";
 import { calculatorGame } from "./games/calculatorGame.js";
 import { gcdGame } from "./games/GCDGame.js";
 import { arithmeticProgressionGame } from "./games/arithmeticProgressionGame.js";
+import { primeNumberGame } from "./games/primeNumberGame.js";
 import { gameTemplate } from "./gameTemplate.js";
 
 const index = (gameNumber) => {
@@ -26,6 +27,9 @@ const index = (gameNumber) => {
             currentGame = arithmeticProgressionGame;
             break;
         case "5": 
+            console.log("Answer 'yes' if given number is prime. Otherwise answer 'no'");
+            currentGame = primeNumberGame;
+            break;
         default:
             isAnswerValid = false;
             break;

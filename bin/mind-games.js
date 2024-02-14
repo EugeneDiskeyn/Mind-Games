@@ -17,6 +17,7 @@ while (isGameContinue) {
     console.log("2. Calculator");
     console.log("3. GCD");
     console.log("4. Arithmetic progression");
+    console.log("5. Prime number");
     console.log("0. exit");
     console.log("");
     
