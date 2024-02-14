@@ -1,6 +1,7 @@
 import { evenNumGame } from "./games/evenNumGame.js";
 import { calculatorGame } from "./games/calculatorGame.js";
 import { gcdGame } from "./games/GCDGame.js";
+import { arithmeticProgressionGame } from "./games/arithmeticProgressionGame.js";
 import { gameTemplate } from "./gameTemplate.js";
 
 const index = (gameNumber) => {
@@ -21,6 +22,9 @@ const index = (gameNumber) => {
             currentGame = gcdGame;
             break;
         case "4": 
+            console.log("What number is missing in the progression?");
+            currentGame = arithmeticProgressionGame;
+            break;
         case "5": 
         default:
             isAnswerValid = false;
