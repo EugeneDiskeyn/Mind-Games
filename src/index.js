@@ -1,5 +1,6 @@
 import { evenNumGame } from "./games/evenNumGame.js";
 import { calculatorGame } from "./games/calculatorGame.js";
+import { gcdGame } from "./games/GCDGame.js";
 import { gameTemplate } from "./gameTemplate.js";
 
 const index = (gameNumber) => {
@@ -16,6 +17,9 @@ const index = (gameNumber) => {
             currentGame = calculatorGame;
             break;
         case "3": 
+            console.log("Find the greatest common divisor of given numbers");
+            currentGame = gcdGame;
+            break;
         case "4": 
         case "5": 
         default:
@@ -23,11 +27,8 @@ const index = (gameNumber) => {
             break;
     }
 
-    if (isAnswerValid) {
-        gameTemplate(currentGame);
-    } else {
-        console.log("Oops, something's wrong")
-    }
+
+    isAnswerValid? gameTemplate(currentGame) : console.log("Oops, something's wrong");
 }
 
 export { index }

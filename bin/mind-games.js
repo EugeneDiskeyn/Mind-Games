@@ -15,6 +15,7 @@ while (isGameContinue) {
     console.log("");
     console.log("1. Even or odd");
     console.log("2. Calculator");
+    console.log("3. GCD");
     console.log("0. exit");
     console.log("");
     

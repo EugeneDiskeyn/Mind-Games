@@ -7,6 +7,7 @@ export const gameTemplate = (currentGame) => {
     while (isAnswerRight && rightAnswerCounter !== 3) {
 
         const rightAnswer = currentGame();
+        
         const userAnswer = readlineSync.question("Your answer: ");
 
         if (rightAnswer === userAnswer) {
