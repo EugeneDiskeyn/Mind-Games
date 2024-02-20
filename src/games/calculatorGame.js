@@ -20,7 +20,7 @@ export const calculatorGame = () => {
             rightAnswer = number1 * number2;
             break;
     }
-    console.log("Question: " + number1 + sign + number2);
+    console.log(`Question: ${number1} ${sign} ${number2}`);
     
     return String(rightAnswer);
 }

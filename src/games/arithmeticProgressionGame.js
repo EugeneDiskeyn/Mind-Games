@@ -12,8 +12,9 @@ export const arithmeticProgressionGame = () => {
             rightAnswer = firstNumber + difference * i;
             sequence += "... ";
         } else {
-            sequence += firstNumber + difference * i + " ";}
+            sequence += `${firstNumber} ${difference * i} `;
         }
+    }
     
     console.log("Question ");
     console.log(sequence);

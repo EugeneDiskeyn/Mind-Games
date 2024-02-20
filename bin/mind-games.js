@@ -9,7 +9,7 @@ console.log("node bin/brain-games.js");
 console.log("Welcome to the Brain Games!");
 
 const name = getName();
-console.log("Hello,", name);
+console.log(`Hello, ${name}`);
 
 while (isGameContinue) {
     console.log("");

@@ -15,7 +15,7 @@ export const gameTemplate = (currentGame) => {
             console.log("");
             rightAnswerCounter++;
         } else {
-            console.log("'" + userAnswer + "'" + " is wrong answer ;(. The right answer is " + rightAnswer);
+            console.log(`'${userAnswer}' is wrong answer ;(. The right answer is '${rightAnswer}'`);
             isAnswerRight = false;
         }
     }
