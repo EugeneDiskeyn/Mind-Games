@@ -9,11 +9,12 @@
 ## EugeneDiskeyn
 
 ## Description
+
 "Mind-games" is a set of five console games, built on the principle of popular mobile applications for brain improvement.
 Each game gives you several questions, on which you have to give correct answers.
 After three right answers a game is considered to be completed.
 Wrong answers end a game and offer a replay.
-The games offer you to: 
+The games offer you to:
 
 - Calculate an arithmetic expression
 

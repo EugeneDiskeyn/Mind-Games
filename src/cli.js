@@ -1,5 +1,5 @@
-import readlineSync from "readline-sync"
+import readlineSync from "readline-sync";
 
 export const getName = () => {
-    return readlineSync.question("Type your name here: ");
-}
+  return readlineSync.question("Type your name here: ");
+};

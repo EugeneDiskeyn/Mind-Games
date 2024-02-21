@@ -1,7 +1,7 @@
-import readlineSync from "readline-sync"
+import readlineSync from "readline-sync";
 
 import { getName } from "../src/cli.js";
-import { index } from "../src/index.js"
+import { index } from "../src/index.js";
 
 let isGameContinue = true;
 
@@ -12,21 +12,23 @@ const name = getName();
 console.log(`Hello, ${name}`);
 
 while (isGameContinue) {
-    console.log("");
-    console.log("1. Even or odd");
-    console.log("2. Calculator");
-    console.log("3. GCD");
-    console.log("4. Arithmetic progression");
-    console.log("5. Prime number");
-    console.log("0. exit");
-    console.log("");
-    
-    const gameNumber = readlineSync.question("Choose the game you would like to play(type the number of the game) ");
-    console.log("");
+  console.log("");
+  console.log("1. Even or odd");
+  console.log("2. Calculator");
+  console.log("3. GCD");
+  console.log("4. Arithmetic progression");
+  console.log("5. Prime number");
+  console.log("0. exit");
+  console.log("");
 
-    if (gameNumber !== "0") { 
-        index(gameNumber);
-    } else {
-        isGameContinue = false;
-    }
+  const gameNumber = readlineSync.question(
+    "Choose the game you would like to play(type the number of the game) ",
+  );
+  console.log("");
+
+  if (gameNumber !== "0") {
+    index(gameNumber);
+  } else {
+    isGameContinue = false;
+  }
 }

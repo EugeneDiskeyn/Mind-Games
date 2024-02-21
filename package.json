@@ -2,13 +2,10 @@
   "name": "mind-games",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
+  "description": "'Mind-games' is a set of five console games, built on the principle of popular mobile applications for brain improvement. Each game gives you several questions, on which you have to give correct answers. After three right answers a game is considered to be completed. Wrong answers end a game and offer a replay.",
   "main": "index.js",
   "bin": {
     "mind-games": "bin/mind-games.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -23,7 +20,8 @@
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.2"
+    "eslint-plugin-import": "^2.25.2",
+    "prettier": "3.2.5"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
