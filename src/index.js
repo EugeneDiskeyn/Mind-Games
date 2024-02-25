@@ -1,6 +1,6 @@
 import { evenNumGame } from "./games/evenNumGame.js";
 import { calculatorGame } from "./games/calculatorGame.js";
-import { gcdGame } from "./games/GCDGame.js";
+import { GCDGame } from "./games/GCDGame.js";
 import { arithmeticProgressionGame } from "./games/arithmeticProgressionGame.js";
 import { primeNumberGame } from "./games/primeNumberGame.js";
 import { gameTemplate } from "./gameTemplate.js";
@@ -20,7 +20,7 @@ const index = (gameNumber) => {
       break;
     case "3":
       console.log("Find the greatest common divisor of given numbers");
-      currentGame = gcdGame;
+      currentGame = GCDGame;
       break;
     case "4":
       console.log("What number is missing in the progression?");
