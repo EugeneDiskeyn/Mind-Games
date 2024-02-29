@@ -1,15 +1,15 @@
 import { getRandomNumber } from "../getRandomNumber.js";
 
 const getSequence = (firstNumber, difference, indexOfHiddenNumber, sequenceLength) => {
-  let sequence = "";
+  const sequence = [];
   for (let i = 1; i < sequenceLength + 1; i++) {
     if (indexOfHiddenNumber === i) {
-      sequence += "... ";
+      sequence[i-1] = "..."
     } else {
-      sequence += `${firstNumber + difference * i} `;
+      sequence[i-1] = `${firstNumber + difference * i}`;
     }
   }
-  return sequence;
+  return sequence.join(", ");
 }
 
 export const arithmeticProgressionGame = () => {

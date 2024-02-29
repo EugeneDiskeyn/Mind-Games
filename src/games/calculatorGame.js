@@ -1,22 +1,17 @@
 import { getRandomNumber } from "../getRandomNumber.js";
 
 const getRightAnswer = (number1, number2, signNumber) => {
-  let rightAnswer;
+  //возвращать в кецсах
   switch (signNumber) {
     case 0:
-      rightAnswer = number1 + number2;
-      break;
+      return number1 + number2;
     case 1:
-      rightAnswer = number1 - number2;
-      break;
+      return number1 - number2;
     case 2:
-      rightAnswer = number1 * number2;
-      break;
+      return number1 * number2;
     default:
-      rightAnswer = number1 + number2;
-      break;
+      return number1 + number2;
   }
-  return String(rightAnswer);
 }
 
 export const calculatorGame = () => {
@@ -24,7 +19,7 @@ export const calculatorGame = () => {
   const signNumber = getRandomNumber(0, 2);
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
-  const rightAnswer = getRightAnswer(number1, number2, signNumber);
+  const rightAnswer = String(getRightAnswer(number1, number2, signNumber));
   const sign = arithmeticSigns[signNumber];
 
   console.log(`Question: ${number1} ${sign} ${number2}`);

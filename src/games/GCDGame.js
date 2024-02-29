@@ -1,10 +1,14 @@
 import { getRandomNumber } from "../getRandomNumber.js";
-
-const getRightAnswer =(f_number1, f_number2) => {
-  while (f_number1 !== f_number2) {
-    f_number1 < f_number2 ? (f_number2 -= f_number1) : (f_number1 -= f_number2);
+const getRightAnswer = (f_number1, f_number2) => {
+  if (f_number1 !== f_number2) {
+    if (f_number1 < f_number2) {
+      return getRightAnswer(f_number1, f_number2-f_number1);
+    } else {
+      return getRightAnswer(f_number1 - f_number2, f_number2);
+    }
+  } else {
+    return String(f_number1);
   }
-  return String(f_number1);
 }
 
 export const GCDGame = () => {
