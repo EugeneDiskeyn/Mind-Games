@@ -1,7 +1,6 @@
 import { getRandomNumber } from "../getRandomNumber.js";
 
 const getRightAnswer = (number1, number2, signNumber) => {
-  //возвращать в кецсах
   switch (signNumber) {
     case 0:
       return number1 + number2;
