@@ -25,3 +25,7 @@ The games offer you to:
 - Define a gretest common divisor
 
 - Define a prime number
+
+## Demo
+
+[![asciicast](https://asciinema.org/a/ODcxOQG7oyYyyL63xnxBqkmTF.svg)](https://asciinema.org/a/ODcxOQG7oyYyyL63xnxBqkmTF)
